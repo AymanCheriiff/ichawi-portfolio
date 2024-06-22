@@ -1,0 +1,201 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.cdnfonts.com/css/nunito-2');
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.fluid-container {
+    height: 100vb;
+}
+
+/* contact section start */
+
+.demo-bg {
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+i {
+    cursor: pointer;
+}
+
+.bg-cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("images/bg.jpg");
+}
+
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 16px 0;
+}
+
+.contact-section .container {
+    display: flex;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: white;
+}
+
+.contact {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+.contact i {
+    color: green;
+    margin-right: 16px;
+}
+
+@media (max-width: 775px) {
+    .contact-section {
+        display: none;
+    }
+}
+
+/* contact section end */
+
+/* navbar start */
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo-mobile {
+    display: none;
+    margin-bottom: 16px;
+}
+
+.nav-bar .container {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.item-list {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.item-list:hover {
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+.btn-contact:hover {
+    background-color: rgba(0, 128, 0, 0.42);
+    color: white;
+}
+
+.btn-contact {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.menu {
+    color: white;
+    display: none;
+    background-color: black;
+    gap: 8px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 3px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.mobile-container {
+    display: none !important;
+    height: 0;
+    padding: 0 !important;
+    background-color: gray;
+    transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 775px) {
+    .menu {
+        display: flex;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .btn-contact {
+        display: none;
+    }
+
+    .logo {
+        font-size: 24px;
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .mobile-container {
+        display: block !important;
+        overflow-y: hidden;
+    }
+
+    .mobile-container .list {
+        color: white;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start !important;
+        padding-left: 50px;
+        font-weight: 700;
+    }
+
+    .nav-bar .container {
+        background-color: gray;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+/* navbar end */
