@@ -6,6 +6,11 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .fluid-container {
     height: 100vb;
 }
