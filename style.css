@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -65,7 +65,7 @@ i {
 }
 
 .contact i {
-    color: green;
+    color: #28ae60;
     margin-right: 16px;
 }
 
@@ -82,7 +82,7 @@ i {
 .logo {
     color: white;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .logo-mobile {
@@ -116,7 +116,7 @@ i {
 }
 
 .item-list:hover {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .btn {
@@ -129,9 +129,9 @@ i {
 }
 
 .btn-contact {
-    background-color: green;
+    background-color: #28ae60;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: auto;
     margin-top: 0;
 }
@@ -141,7 +141,7 @@ i {
     display: none;
     background-color: black;
     gap: 8px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 6px 12px;
     border-radius: 3px;
     margin-left: auto;
@@ -228,13 +228,13 @@ i {
 
 .info h1 {
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 52px;
 }
 
 .info .title {
     color: yellow;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 28px;
 }
 
@@ -258,3 +258,149 @@ i {
 }
 
 /* heading section end */
+
+
+/* education section start */
+
+.education-section {
+    background-color: white;
+    height: fit-content;
+}
+
+.education-section h1 {
+    font-weight: 600;
+}
+
+.education-section .container {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.schools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.schools div {
+    flex: 1;
+    height: 350px;
+    min-width: 250px;
+}
+
+.schools div:nth-child(1) {
+    background-image: url("images/monji slim.jpg");
+    background-size: cover;
+}
+
+.schools div:nth-child(2) {
+    background-image: url("images/IIT.webp");
+    background-size: cover;
+}
+
+.schools .title {
+    font-size: 34px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.51) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.schools div .cover {
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #28ae60;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    opacity: 0;
+}
+
+.schools div .cover span {
+    display: none;
+}
+
+.schools div:hover .cover {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100;
+}
+
+.schools div:hover .cover span {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .schools .title {
+        font-size: 22px;
+    }
+
+    .cover {
+        font-size: 22px;
+    }
+}
+
+/* education section end */
+
+/* skills section start */
+
+.skills-section {
+    background-color: white;
+    height: fit-content !important;
+}
+
+.skills-section .container {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.skills-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.skills-section .container div {
+    flex: 1;
+    min-width: 250px;
+    height: fit-content;
+}
+
+.skills-section .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 0;
+}
+
+.list-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill {
+    list-style: none;
+}
+
+.bi-check-circle {
+    color: #28ae60;
+}
+
+/* skills section end */
