@@ -150,6 +150,8 @@ i {
 }
 
 .mobile-container {
+    position: absolute;
+    z-index: 1;
     display: none !important;
     height: 0;
     padding: 0 !important;

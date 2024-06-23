@@ -6,7 +6,7 @@ let expended = false;
 function expend() {
     if (expended === false) {
         navBarMobile.style.display = 'flex !important';
-        navBarMobile.style.height = '300px';
+        navBarMobile.style.height = '210px';
         expended = true;
     } else {
         navBarMobile.style.display = 'none !important';
